@@ -1,0 +1,203 @@
+@import "fonts.css";
+
+/* ****Root**** */
+
+:root {
+    --RB: "Raleway-Black";
+    --RB: "Raleway-Bold";
+    --RR: "Raleway-Regular";
+    --RT: "Raleway-Thin";
+    --RB: "Roboto-Bold";
+    --RR: "Roboto-Regular";
+    --green: #69CF17;
+    --green-light: #69CF1780;
+    --white: #FFFFFF;
+    --black: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ****Root end**** */
+
+/* ****Header start**** */
+
+.header {
+    height: 100vh;
+}
+
+.header-prenav {
+    background: #0C0C0C;
+}
+
+.header-prenav__top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+
+}
+
+.header-prenav__left {
+    display: flex;
+}
+
+.header-prenav__text {
+    color: #FFF;
+    font-family: "RR";
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.header-prenav__link {
+    color: #FFF;
+    text-align: right;
+    font-family: "RR";
+    font-size: 16px;
+    line-height: 19px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.header-prenav__list {
+    display: flex;
+}
+
+.header-nav {
+    border: 1px solid rgba(125, 115, 115, 0.50);
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(7.5px);
+    height: 70px; /* shu erga yozdim */
+    display: flex;    
+}
+
+.header-nav__top {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; /* shu erga yozdim */
+}
+
+.header-nav__list li {
+    height: 100%; /* shu erga yozdim */
+    display: flex; /* shu erga yozdim */
+}
+
+.header-nav__list {
+    display: flex;     /* shu erga yozdim */
+    height: 100%; /* shu erga yozdim */
+}
+
+.header-nav__link {
+    color: #FFF;
+    font-family: "RB";
+    font-size: 18px;
+    line-height: 21px;
+    height: 100%; /* shu erga yozdim */
+    display: flex; /* shu erga yozdim */
+    align-items: center; /* shu erga yozdim */
+    padding-left: 14px;
+    padding-right: 14px;
+    transition: all 500ms;
+}
+
+.header-nav__link:hover {
+    background: var(--green);
+}
+
+.header-nav__logo {
+    color: #FFF;
+    font-family: "RB";
+    font-size: 30px;
+    line-height: 36px;
+    /* 83.333% */
+    border-radius: 4px;
+    border: 4px solid #06600F;
+    background: rgba(10, 148, 24, 0.75);
+    padding: 11px 18px;
+}
+
+
+
+
+.header-content {
+    background: url(../images/headerBG.jpg) no-repeat center/ cover;
+    height: 700px;
+}
+
+.header-content__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-content__tittle {
+    color: #69CF17;
+    font-family: 'RB';
+    font-size: 72px;
+    line-height: 85px;
+}
+
+.header-content__item {
+    color: #69CF17;
+    font-family: "RR";
+    font-size: 36px;
+    line-height: 17px;
+    /* 47.222% */
+    margin-top: 18px;
+}
+
+.header-content__text {
+    color: #FFF;
+    font-family: 'RR';
+    font-size: 18px;
+    line-height: 24px;
+    /* 133.333% */
+    margin-top: 18px;
+}
+
+.header-content__btn {
+    display: flex;
+    margin-top: 30px;
+}
+
+.header-content__left-btn {
+    color: #FFF;
+    text-align: right;
+    font-family: 'RT';
+    font-size: 50px;
+    line-height: 25px;
+    /* 50% */
+    background: rgba(105, 207, 23, 0.50);
+    backdrop-filter: blur(9px);
+    padding: 33px 76px;
+}
+
+.header-content__right-btn {
+    color: #FFF;
+    text-align: right;
+    font-family: "RR";
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    padding: 15px 71px;
+}
